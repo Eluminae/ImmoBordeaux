@@ -17,8 +17,9 @@
         </nav>
     </header>
     <div id="top-content">
-        <img class="home-logo" src="public/resources/image/logo.png" alt="Logo de l'entreprise">
-        <form>
+        <img class="home-logo" src="public/resources/image/logo.png" alt="Logo de l'entreprise" />
+        
+        <form id="search-form">
             <fieldset>
                 <div class="onoffswitch">
                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
@@ -35,17 +36,17 @@
                     <option value="collocation">Colocation</option>
                 </select><br />
                 
-                <input type="search" />
+                <input type="search" class="search-input"/>
             </fieldset>
                 
             <fieldset id="search-sliders">
-                <input class="event-slider" type="range" min="0" max="500" data-text="m²"/>
+                <input id="space-slider" class="event-slider" type="range" min="0" max="500" data-text="m²"/>
                 <span id="space-slider-span">150 m²</span>
 
-                <input class="event-slider" type="range" min="0" max="500" data-text="€"/>
-                <span id="space-slider-span">150 €</span>
+                <input id="price-slider" class="event-slider" type="range" min="0" max="500" data-text="€"/>
+                <span id="price-slider-span">150 €</span>
 
-                <input class="event-slider" type="range" min="1" max="5" data-text="pièces"/>
+                <input id="rooms-slider" class="event-slider" type="range" min="1" max="5" data-text="pièces"/>
                 <span id="rooms-slider-span">2 pièces</span>
             </fieldset>
         </form>

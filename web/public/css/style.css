@@ -30,7 +30,7 @@ header > nav > ul > li a:hover {
 
 #top-content {
     background-size: 100% ;
-    width:100%;  
+    width:100%; 
 }
 
 #top-content:before {
@@ -49,6 +49,21 @@ header > nav > ul > li a:hover {
     position: fixed;
     height: 100%; 
     width: 100%;
+}
+
+#top-content > .home-logo {
+    display: block;
+    margin: auto;
+    width: 25vw;
+}
+
+#top-content > #search-form {
+    background-color: rgba(189, 195, 199, 0.7);
+    display: flex;
+}
+
+#top-content > #search-form fieldset {
+    border: none;
 }
 
 #on-off-button {
@@ -122,6 +137,12 @@ header > nav > ul > li a:hover {
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
+}
+
+#search-form .search-input {
+    width: 50vw;
+    font-size: 1.2em;
+    padding: 1vh 1vw 1vh 1vw;
 }
 
 /*end top content*/
