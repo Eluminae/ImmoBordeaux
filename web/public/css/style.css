@@ -55,5 +55,11 @@ footer > div {
 footer .social-network-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+    width: 10%;
+}
+
+footer .social-network-buttons > div {
+    display: flex;
+    justify-content: space-around;
 }
