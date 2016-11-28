@@ -29,8 +29,9 @@ header > nav > ul > li a:hover {
 }
 
 #top-content {
-    background-size: 100% ;
-    width:100%; 
+    background-size: 100vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 #top-content:before {
@@ -60,6 +61,9 @@ header > nav > ul > li a:hover {
 #top-content > #search-form {
     background-color: rgba(189, 195, 199, 0.7);
     display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 4vh;
 }
 
 #top-content > #search-form fieldset {
@@ -120,7 +124,7 @@ header > nav > ul > li a:hover {
     text-align: right;
 }
 .onoffswitch-switch {
-    display: block; 
+    display: inline-block; 
     width: 18px; 
     margin: 6px;
     background: #FFFFFF;
@@ -143,6 +147,39 @@ header > nav > ul > li a:hover {
     width: 50vw;
     font-size: 1.2em;
     padding: 1vh 1vw 1vh 1vw;
+}
+
+#search-form select {
+    display: inline-block;
+    position: relative;
+    bottom: 2.2vh;
+    border-radius: 20px;
+    padding: 0.7vh 0.7vw 0.7vh 0.7vw;
+    border: solid rgba(189, 195, 199, 0.8) 2px;
+}
+
+#search-form > #search-sliders .slider-input {
+    background-color: transparent;
+    border: none;
+    width: 5vw;
+}
+
+#search-form > #search-sliders .slider-input:focus {
+    outline: none;
+}
+
+#search-form > #search-sliders #rooms-slider {
+    display: block;
+    width: 5vw;
+}
+
+#search-form > button {
+    border: none;
+    position: absolute;
+    margin: 24vh 0 0 65vw;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    background-color: #d30039;
+    color: white;
 }
 
 /*end top content*/

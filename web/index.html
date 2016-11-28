@@ -33,22 +33,23 @@
                     <option value="" selected>Type de bien</option>
                     <option value="apartment">Appartement</option>
                     <option value="house">Maison</option>
-                    <option value="collocation">Colocation</option>
                 </select><br />
                 
                 <input type="search" class="search-input"/>
             </fieldset>
                 
             <fieldset id="search-sliders">
-                <input id="space-slider" class="event-slider" type="range" min="0" max="500" data-text="m²"/>
-                <span id="space-slider-span">150 m²</span>
+                <input id="space-slider" class="event-slider" type="range" min="0" max="500"/>
+                <input id="space-slider-input" class="slider-input" value="150" /> m²
 
-                <input id="price-slider" class="event-slider" type="range" min="0" max="500" data-text="€"/>
-                <span id="price-slider-span">150 €</span>
+                <input id="price-slider" class="event-slider" type="range" min="0" max="500" />
+                <input id="price-slider-input" class="slider-input" value="150" /> €
 
-                <input id="rooms-slider" class="event-slider" type="range" min="1" max="5" data-text="pièces"/>
-                <span id="rooms-slider-span">2 pièces</span>
+                <input id="rooms-slider" class="event-slider" type="range" min="1" max="5" />
+                <input id="rooms-slider-input" class="slider-input" value="2" /> pièces
             </fieldset>
+            
+            <button>Rechercher</button>
         </form>
     </div>
     <footer>
@@ -90,8 +91,7 @@
 
         Array.prototype.forEach.call(elements, function(element) {
             element.addEventListener("change", function showSliderValue() {
-                var text = element.getAttribute("data-text");
-                document.getElementById(element.id+"-span").innerHTML = element.value+" "+text;
+                document.getElementById(element.id+"-input").value = element.value;
             });
         });
     </script>
