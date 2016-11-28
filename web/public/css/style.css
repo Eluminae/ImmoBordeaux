@@ -2,7 +2,7 @@ header {
     width: 100%;
     background-color: #d30039;
     text-align: center;
-    position: fixed;
+/*     position: fixed; */
 }
 
 header > nav > ul > li {
@@ -21,6 +21,32 @@ header > nav > ul > li a {
 
 header > nav > ul > li a:hover {
     background-color: rgba(236, 240, 241,0.4);
+}
+
+#search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    background-color: grey;
+}
+
+#search-fields {
+    display: inline-block;
+}
+
+#search-text {
+    width: 100%;
+}
+
+#search-sliders {
+    flex-direction: column;
+    width: 200px;
+}
+
+.event-slider {
+    width: 100%;
 }
 
 footer a {
