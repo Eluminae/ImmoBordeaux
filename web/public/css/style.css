@@ -37,7 +37,7 @@ header > nav > ul > li a:hover {
 #top-content:before {
     margin:0;
     padding:0;
-    background: url(../resources/image/fond.jpg) no-repeat center fixed; 
+    background: url(../resources/image/fond.jpg) no-repeat center fixed;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
     z-index: -1;
@@ -48,7 +48,7 @@ header > nav > ul > li a:hover {
     -ms-filter: blur(2px);
     content: "";
     position: fixed;
-    height: 100%; 
+    height: 100%;
     width: 100%;
 }
 
@@ -76,71 +76,71 @@ header > nav > ul > li a:hover {
 
 .onoffswitch {
     display: inline-block;
-    position: relative; 
+    position: relative;
     width: 110px;
-    -webkit-user-select:none; 
-    -moz-user-select:none; 
+    -webkit-user-select:none;
+    -moz-user-select:none;
     -ms-user-select: none;
 }
 .onoffswitch-checkbox {
     display: none;
 }
 .onoffswitch-label {
-    display: block; 
-    overflow: hidden; 
+    display: block;
+    overflow: hidden;
     cursor: pointer;
-    border: 3px solid rgba(189, 195, 199, 0.8); 
+    border: 3px solid rgba(189, 195, 199, 0.8);
     border-radius: 20px;
 }
 .onoffswitch-inner {
-    display: block; 
-    width: 200%; 
+    display: block;
+    width: 200%;
     margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; 
-    float: left; 
-    width: 50%; 
-    height: 30px; 
-    padding: 0; 
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
     line-height: 30px;
-    font-size: 14px; 
-    color: white; 
+    font-size: 14px;
+    color: white;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
     content: "Acheter";
     padding-left: 10px;
-    background-color: #d30039; 
+    background-color: #d30039;
     color: #FFFFFF;
 }
 .onoffswitch-inner:after {
     content: "Louer";
     padding-right: 10px;
-    background-color: #004b9d; 
+    background-color: #004b9d;
     color: #FFFFFF;
     text-align: right;
 }
 .onoffswitch-switch {
-    display: inline-block; 
-    width: 18px; 
+    display: inline-block;
+    width: 18px;
     margin: 6px;
     background: #FFFFFF;
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    top: 0;
     bottom: 0;
     right: 75px;
-    border: 3px solid rgba(189, 195, 199, 0.8);  
+    border: 3px solid rgba(189, 195, 199, 0.8);
     border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+    right: 0px;
 }
 
 #search-form .search-input {
