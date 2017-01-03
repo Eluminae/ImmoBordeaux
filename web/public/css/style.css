@@ -146,54 +146,55 @@ footer .social-network-buttons > div {
 
 /* small screens styles */
 @media (max-width: 800px) {
-header {
-    border: solid red 1px;
-    height: 10vh;
-}
+    header {
+        border: solid red 1px;
+        height: 10vh;
+    }
 
-header > nav > ul > li > a {
-    display: block;
-    margin: 0;
-    padding: 1vh 0 1vh 0;
-    border-radius: 0;
-}
+    header > nav > ul > li > a {
+        display: block;
+        margin: 0;
+        padding: 1vh 0 1vh 0;
+        border-radius: 0;
+    }
 
-header > nav > ul > li {
-    display: block;
-    background-color: #d30039;
-    border-top: solid rgba(236, 240, 241, 0.4) 1px;
-}
+    header > nav > ul > li {
+        display: block;
+        background-color: #d30039;
+        border-top: solid rgba(236, 240, 241, 0.4) 1px;
+    }
 
-header .nav-inner {
-    position: absolute;
-    width: 100vw;
-    transform: translateX(-110%) translateZ(0);
-    transition: transform .2s;
-    will-change: transform;
-    padding: 0;
-    margin-top: 10vh;
-}
+    header .nav-inner {
+        position: absolute;
+        width: 100vw;
+        transform: translateX(-110%) translateZ(0);
+        transition: transform .2s;
+        will-change: transform;
+        padding: 0;
+        margin-top: 10vh;
+    }
 
-header input:checked ~ .nav-inner {
-    transform: translateX(0);
-}
+    header input:checked ~ .nav-inner {
+        transform: translateX(0);
+    }
 
-header .nav-button {
-    display: block;
-    position: absolute;
-    top: 1rem; right: 1rem;
-    z-index: 1;
-    height: 3.5rem; width: 3.5rem;
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgba(236, 240, 241, 0.7), rgba(236, 240, 241, 0.7)),
-        linear-gradient(to right, rgba(236, 240, 241, 0.5), rgba(236, 240, 241, 0.5)),
-        linear-gradient(to right, rgba(236, 240, 241, 0.4), rgba(236, 240, 241, 0.4));
-    background-position: center top, center, center bottom;
-    background-repeat: no-repeat;
-    background-size: 3.5rem .9rem;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    header .nav-button {
+        display: block;
+        position: absolute;
+        top: 1rem; right: 1rem;
+        z-index: 1;
+        height: 3.5rem; width: 3.5rem;
+        background-color: transparent;
+        background-image: linear-gradient(to right, rgba(236, 240, 241, 0.7), rgba(236, 240, 241, 0.7)),
+            linear-gradient(to right, rgba(236, 240, 241, 0.5), rgba(236, 240, 241, 0.5)),
+            linear-gradient(to right, rgba(236, 240, 241, 0.4), rgba(236, 240, 241, 0.4));
+        background-position: center top, center, center bottom;
+        background-repeat: no-repeat;
+        background-size: 3.5rem .9rem;
+        padding: 0;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
 }
