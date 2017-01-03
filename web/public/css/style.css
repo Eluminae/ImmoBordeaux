@@ -1,8 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.middle-text-size{
+    font-size: 0.85em;
+}
+
+.center-align{
+    text-align: center;
+}
+
+h2{
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px grey;
+}
+
+section{
+    padding: 7vh 0;
+}
+
+section h3{
+    color: #d30039;
+}
+
+.section-1{
+    background-color: #f5f5f5;
+}
+
+.section-2{
+    background-color: #004b9d;
+}
+
+.flex{
+    padding: 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex .description{
+    background-color: #FFFFFF;
+    padding: 2vh 1.5vw 2vh 1.5vw;
+    width: 250px;
+    margin: 3vh 1vw 3vh 1vw;
+    text-align: justify; 199,0.2);
+  }
+
+ .section-2 .flex .description{
+    box-shadow: 12px 12px 0 rgba(189, 195, 199,0.2);
+}
+
+.flex .description img{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
 header {
     width: 100%;
     background-color: #d30039;
     text-align: center;
 /*     position: fixed; */
+}
+
+header nav > input, header .nav-button {
+    display: none;
 }
 
 header > nav > ul > li {
@@ -12,7 +94,6 @@ header > nav > ul > li {
 header > nav > ul > li a {
     display: inline-block;
     color: white;
-    text-decoration: none;
     padding: 1vh 1vw 1vh 1vw;
     margin: 0 3vw 0 3vw;
     font-size: 120%;
@@ -186,7 +267,6 @@ header > nav > ul > li a:hover {
 
 footer a {
     color: grey;
-    text-decoration: none;
     font-style: italic;
 }
 footer a:hover {
@@ -223,4 +303,59 @@ footer .social-network-buttons {
 footer .social-network-buttons > div {
     display: flex;
     justify-content: space-around;
+}
+
+/* small screens styles */
+@media (max-width: 800px) {
+    header {
+        border: solid red 1px;
+        height: 10vh;
+    }
+
+    header > nav > ul > li > a {
+        display: block;
+        margin: 0;
+        padding: 1vh 0 1vh 0;
+        border-radius: 0;
+    }
+
+    header > nav > ul > li {
+        display: block;
+        background-color: #d30039;
+        border-top: solid rgba(236, 240, 241, 0.4) 1px;
+    }
+
+    header .nav-inner {
+        position: absolute;
+        width: 100vw;
+        transform: translateX(-110%) translateZ(0);
+        transition: transform .2s;
+        will-change: transform;
+        padding: 0;
+        margin-top: 10vh;
+    }
+
+    header input:checked ~ .nav-inner {
+        transform: translateX(0);
+    }
+
+    header .nav-button {
+        display: block;
+        position: absolute;
+        top: 1rem; right: 1rem;
+        z-index: 1;
+        height: 3.5rem; width: 3.5rem;
+        background-color: transparent;
+        background-image: linear-gradient(to right, rgba(236, 240, 241, 0.7), rgba(236, 240, 241, 0.7)),
+            linear-gradient(to right, rgba(236, 240, 241, 0.5), rgba(236, 240, 241, 0.5)),
+            linear-gradient(to right, rgba(236, 240, 241, 0.4), rgba(236, 240, 241, 0.4));
+        background-position: center top, center, center bottom;
+        background-repeat: no-repeat;
+        background-size: 3.5rem .9rem;
+        padding: 0;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
 }
