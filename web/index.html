@@ -1,93 +1,138 @@
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Immo Bordeaux</title>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-</head>
-<body>
-    <!--Start header-->
-    <header>
-        <nav>
-            <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
-            <label for="toggle-nav" class="nav-button"></label>
-            <ul class="nav-inner">
-                <li><a href="#">Acheter</a></li>
-                <li><a href="#">Louer</a></li>
-                <li><a href="#">Vendre</a></li>
-                <li><a href="#">Mon compte</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--End header-->
-    <section class="section-1">
-        <h2 class="center-align">Nos meilleurs biens</h2>
-        <div class="flex">
-            <div class="description">
-                <img src="./public/resources/image/Maison.jpg" alt="">
-                <h3>Bien1</h3>
-                <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. </p>
-            </div>
-            <div class="description">
-                <img src="./public/resources/image/Maison.jpg" alt="">
-                <h3>Bien2</h3>
-                <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices</p>
-            </div>
-            <div class="description">
-                <img src="./public/resources/image/Maison.jpg" alt="">
-                <h3>Bien3</h3>
-                <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices,</p>
-            </div>
-        </div>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <title>Immo Bordeaux</title>
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
+                <label for="toggle-nav" class="nav-button"></label>
+                <ul class="nav-inner">
+                    <li><a href="#">Acheter</a></li>
+                    <li><a href="#">Louer</a></li>
+                    <li><a href="#">Vendre</a></li>
+                    <li><a href="#">Mon compte</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="top-content">
+            <img class="home-logo" src="public/resources/image/logo.png" alt="Logo de l'entreprise" />
 
-    <section class="section-2">
-        <div class="flex">
-            <div class="description">
-                <h3 class="center-align">Particulier</h3>
-                <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices, Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices,</p>
-            </div>
-            <div class="description">
-                <h3 class="center-align">Professionel</h3>
-                <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id; Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices, Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices,</p>
-            </div>
-        </div>
-    </section>
+            <form id="search-form">
+                <fieldset>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
 
-    <footer>
-        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.445711372315!2d-0.5870353239345786!3d44.844144494749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e6cc9fabf5%3A0xd37ffa770d33cda6!2sRue+de+la+Pr%C3%A9vot%C3%A9%2C+33000+Bordeaux!5e0!3m2!1sfr!2sfr!4v1480337433833" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-        <div>
-            <ul>
-                <li>L'entreprise</li>
-                <li><a href="">Qui sommes nous?</a></li>
-                <li><a href="">Mentions légales</a></li>
-            </ul>
+                    <select>
+                        <option value="" selected>Type de bien</option>
+                        <option value="apartment">Appartement</option>
+                        <option value="house">Maison</option>
+                    </select><br />
+
+                    <input type="search" class="search-input"/>
+                </fieldset>
+
+                <fieldset id="search-sliders">
+                    <input id="space-slider" class="event-slider" type="range" min="0" max="500"/>
+                    <input id="space-slider-input" class="slider-input" value="150" /> m²
+
+                    <input id="price-slider" class="event-slider" type="range" min="0" max="500" />
+                    <input id="price-slider-input" class="slider-input" value="150" /> €
+
+                    <input id="rooms-slider" class="event-slider" type="range" min="1" max="5" />
+                    <input id="rooms-slider-input" class="slider-input" value="2" /> pièces
+                </fieldset>
+
+                <button>Rechercher</button>
+            </form>
         </div>
-        <div>
-            <ul>
-                <li>Plan du site</li>
-                <li><a href="">Acheter</a></li>
-                <li><a href="">Louer</a></li>
-                <li><a href="">Vendre</a></li>
-                <li><a href="">Mon compte</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Nous contacter</li>
-                <li><a href="mailto:contact@immo-bordeaux.com">contact@immo-bordeaux.com</a></li>
-                <li>Dans notre agence :</li>
-                <li>15 rue de test Bordeaux, 15020</li>
-            </ul>
-        </div>
-        <div class="social-network-buttons">
+
+        <!--End header-->
+        <section class="section-1">
+            <h2 class="center-align">Nos meilleurs biens</h2>
+            <div class="flex">
+                <div class="description">
+                    <img src="./public/resources/image/Maison.jpg" alt="">
+                    <h3>Bien1</h3>
+                    <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. </p>
+                </div>
+                <div class="description">
+                    <img src="./public/resources/image/Maison.jpg" alt="">
+                    <h3>Bien2</h3>
+                    <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices</p>
+                </div>
+                <div class="description">
+                    <img src="./public/resources/image/Maison.jpg" alt="">
+                    <h3>Bien3</h3>
+                    <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices,</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="flex">
+                <div class="description">
+                    <h3 class="center-align">Particulier</h3>
+                    <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices, Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices,</p>
+                </div>
+                <div class="description">
+                    <h3 class="center-align">Professionel</h3>
+                    <p class="middle-text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida est. Maecenas fermentum nunc ligula, vel vestibulum magna congue sed. Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id; Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices, Nam lobortis dignissim venenatis. Suspendisse accumsan laoreet ligula. Aenean sit amet ex neque. Duis pretium magna elit, sed hendrerit lorem ullamcorper id. Etiam sed magna a lectus ultrices convallis aliquam sed dolor. Sed et nunc ultrices,</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.445711372315!2d-0.5870353239345786!3d44.844144494749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e6cc9fabf5%3A0xd37ffa770d33cda6!2sRue+de+la+Pr%C3%A9vot%C3%A9%2C+33000+Bordeaux!5e0!3m2!1sfr!2sfr!4v1480337433833" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             <div>
-                <a href=""><img class="social-network-ico" src="public/resources/image/facebook.svg" alt="Facebook"></a>
-                <a href=""><img class="social-network-ico" src="public/resources/image/twitter.svg" alt="Facebook"></a>
+                <ul>
+                    <li>L'entreprise</li>
+                    <li><a href="">Qui sommes nous?</a></li>
+                    <li><a href="">Mentions légales</a></li>
+                </ul>
             </div>
-        </div>
-    </footer>
-</body>
+            <div>
+                <ul>
+                    <li>Plan du site</li>
+                    <li><a href="">Acheter</a></li>
+                    <li><a href="">Louer</a></li>
+                    <li><a href="">Vendre</a></li>
+                    <li><a href="">Mon compte</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Nous contacter</li>
+                    <li><a href="mailto:contact@immo-bordeaux.com">contact@immo-bordeaux.com</a></li>
+                    <li>Dans notre agence :</li>
+                    <li>15 rue de test Bordeaux, 15020</li>
+                </ul>
+            </div>
+            <div class="social-network-buttons">
+                <div>
+                    <a href=""><img class="social-network-ico" src="public/resources/image/facebook.svg" alt="Facebook"></a>
+                    <a href=""><img class="social-network-ico" src="public/resources/image/twitter.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        elements = document.getElementsByClassName("event-slider");
+
+    Array.prototype.forEach.call(elements, function(element) {
+        element.addEventListener("change", function showSliderValue() {
+            document.getElementById(element.id+"-input").value = element.value;
+        });
+    });
+    </script>
 </html>

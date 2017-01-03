@@ -80,7 +80,7 @@ header {
     width: 100%;
     background-color: #d30039;
     text-align: center;
-    position: fixed;
+/*     position: fixed; */
 }
 
 header nav > input, header .nav-button {
@@ -103,6 +103,167 @@ header > nav > ul > li a {
 header > nav > ul > li a:hover {
     background-color: rgba(236, 240, 241,0.4);
 }
+
+/* top content  (search)*/
+.event-slider {
+    width: 100%;
+}
+
+#top-content {
+    background-size: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+#top-content:before {
+    margin:0;
+    padding:0;
+    background: url(../resources/image/fond.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    z-index: -1;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#top-content > .home-logo {
+    display: block;
+    margin: auto;
+    width: 25vw;
+}
+
+#top-content > #search-form {
+    background-color: rgba(189, 195, 199, 0.7);
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 4vh;
+}
+
+#top-content > #search-form fieldset {
+    border: none;
+}
+
+#on-off-button {
+    width: 5vw;
+}
+
+.onoffswitch {
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid rgba(189, 195, 199, 0.8);
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Acheter";
+    padding-left: 10px;
+    background-color: #d30039;
+    color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Louer";
+    padding-right: 10px;
+    background-color: #004b9d;
+    color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: inline-block;
+    width: 18px;
+    margin: 6px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 75px;
+    border: 3px solid rgba(189, 195, 199, 0.8);
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+#search-form .search-input {
+    width: 50vw;
+    font-size: 1.2em;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+#search-form select {
+    display: inline-block;
+    position: relative;
+    bottom: 2.2vh;
+    border-radius: 20px;
+    padding: 0.7vh 0.7vw 0.7vh 0.7vw;
+    border: solid rgba(189, 195, 199, 0.8) 2px;
+}
+
+#search-form > #search-sliders .slider-input {
+    background-color: transparent;
+    border: none;
+    width: 5vw;
+}
+
+#search-form > #search-sliders .slider-input:focus {
+    outline: none;
+}
+
+#search-form > #search-sliders #rooms-slider {
+    display: block;
+    width: 5vw;
+}
+
+#search-form > button {
+    border: none;
+    position: absolute;
+    margin: 24vh 0 0 65vw;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    background-color: #d30039;
+    color: white;
+}
+
+/*end top content*/
 
 footer a {
     color: grey;
